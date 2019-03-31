@@ -1,0 +1,22 @@
+{% extends "admin/base.html" %}
+
+{% block title %}{{ title }} | {{ site_title|default:_('Django site admin') }}{% endblock %}
+
+{# bloque para añadir estilos al administrador panel #}
+
+
+{% block extrastyle %}
+    <style>
+        #header {background: #4c2d1b;}
+    </style>
+{% endblock extrastyle %}
+
+{% block branding %}
+<h1 id="site-name">
+    <a href="{% url 'admin:index' %}">
+        <!-- {{ site_header|default:_('Django administration') }} -->
+        <img src="{% static 'logo.png' %}" height="40px" alt="logo la cafetier">
+    </a></h1>
+{% endblock %}
+
+{% block nav-global %}{% endblock %}

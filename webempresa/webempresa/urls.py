@@ -39,3 +39,9 @@ if settings.DEBUG:
     from django.conf.urls.static import static
     # ruta a donde buscar los archivos media
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
+
+# custom titles for admin
+admin.site.site_header = 'La Caffetiere'
+admin.site.index_title = 'Panel de administracion'
+admin.site.site_title = 'La cafetier'
