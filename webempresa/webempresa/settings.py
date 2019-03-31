@@ -25,7 +25,7 @@ SECRET_KEY = '7#%)9mele$63*_j9n#sz8pq%8ng-=$&n691n(=y1q-scjyqme)'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['desktoptmc.pythonanywhere.com', 'localhost', '127.0.0.1']
 
 
 # Application definition
